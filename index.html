@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinatoNEWS Card</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at center, #1d1b3f, #0a0a1a);
+      height: 100vh;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .background-particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('https://www.transparenttextures.com/patterns/stardust.png');
+      opacity: 0.1;
+      z-index: 0;
+    }
+
+    .card {
+      z-index: 1;
+      background: rgba(50, 40, 100, 0.3);
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 0 20px #00ffff40;
+      backdrop-filter: blur(10px);
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #00f6ff;
+      box-shadow: 0 0 30px #00ffff80;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #00f6ff;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .desc {
+      color: #ccc;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+  font-weight: bold;
+
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+
+    .discord {
+      background: linear-gradient(90deg, #5f5fff, #7f7fff);
+      box-shadow: 0 0 10px #5f5fff;
+    }
+
+    .site {
+      background: linear-gradient(90deg, #00f6ff, #00d4ff);
+      box-shadow: 0 0 10px #00f6ff;
+    }
+
+    .insta {
+      background: linear-gradient(90deg, #f7797d, #FBD786, #C6FFDD);
+      box-shadow: 0 0 10px #ff00c8;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    .glow-ring {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #00ffff40 10%, transparent 70%);
+      animation: rotate 12s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="background-particles"></div>
+  <div class="glow-ring"></div>
+  <div class="card">
+    <img class="profile-img" src="https://i.imgur.com/25jMuey.png" alt="Logo FinatoNEWS">
+    <h1>FinatoNEWS</h1>
+    <div class="desc">Desenvolvedor de Jogos · 14 anos <br> Godot Master</div>
+    <a href="http://discord.gg/UfDfBEFJgg" target="_blank" class="btn discord">Discord</a>
+    <a href="https://finatonews.webnode.page" target="_blank" class="btn site">Meu Site</a>
+    <a href="https://www.instagram.com/finatonews/" target="_blank" class="btn insta">Instagram</a>
+  </div>
+</body>
+</html>
